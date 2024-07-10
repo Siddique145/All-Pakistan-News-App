@@ -1,0 +1,151 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+}
+
+.obj-width {
+  max-width: 1200px;
+  margin: auto;
+}
+
+nav {
+  background-color: #800000;
+  box-shadow: 0 7px 11px #800000;
+  padding: 10px 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.navbar .logo {
+  color: white;
+  font-size: 2.2rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#search-input {
+  max-width: 400px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  color: black;
+  outline-color: #800000;
+  margin-right: 10px;
+}
+
+#search-button {
+  padding: 10px 20px;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+#blog-container {
+  padding: 3rem 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-family: serif;
+}
+
+.blog-card {
+  width: calc(50% - 20px);
+  max-width: 100%;
+  border: 1px solid #800000;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 1rem;
+  margin-bottom: 20px;
+}
+
+.blog-card:hover {
+  box-shadow: 4px 4px 10px #800000;
+}
+
+.blog-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.blog-card h2 {
+  color: #800000;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.blog-card p {
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .blog-card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar .logo {
+    font-size: 1.8rem;
+  }
+
+  #search-input {
+    width: 150px;
+    padding: 10px;
+    margin-bottom: 4px;
+  }
+}
+
+@media (max-width: 375px) {
+  .navbar .logo {
+    font-size: 1.6rem;
+  }
+  nav{
+    padding: 0;
+  }
+
+  #search-input {
+    width: 130px;
+    padding: 8px;
+  }
+
+  .blog-card {
+    width: 100%;
+  }
+}
+
+.footer{
+    height: 5rem;
+    background-color: #800000;
+    color: aliceblue;
+    text-align: center;
+}
+.footer h1{
+    font-size: small;
+}
+#blog-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+}

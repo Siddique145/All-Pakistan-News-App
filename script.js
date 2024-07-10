@@ -63,7 +63,7 @@ const searchInput = document.getElementById("search-input");
 const searchButton = document.getElementById("search-button");
 
 async function fetchNews(query = "Pakistan") {
-  //const apiUrl = `https://gnews.io/api/v4/search?q=${query}&country=pk&max=10&token=${apikey}`;
+  const apiUrl = `https://gnews.io/api/v4/search?q=${query}&country=pk&max=10&token=${apikey}`;
   try {
     const response = await fetch(apiUrl);
     const data = await response.json();
